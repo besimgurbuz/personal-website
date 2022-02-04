@@ -54,5 +54,9 @@
 		@media (max-width: 1090px) {
 			padding: 0 100px;
 		}
+
+		@media (max-width: 780px) {
+			padding: 0 50px;
+		}
 	}
 </style>

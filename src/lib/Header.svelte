@@ -1,15 +1,42 @@
 <script lang="ts">
+	import { onDestroy, onMount } from 'svelte';
+	import SidebarMenu from './SidebarMenu.svelte';
 	import ThemeSwitcher from './ThemeSwitcher.svelte';
+
+	let navbarElement: HTMLElement;
+	let resizeObserver: ResizeObserver;
+	let displayInDropdown = false;
+
+	onMount(() => {
+		resizeObserver = new ResizeObserver(([resizeEntry]) => {
+			const { contentRect } = resizeEntry;
+
+			if (contentRect.width <= 480) {
+				displayInDropdown = true;
+			} else {
+				displayInDropdown = false;
+			}
+		});
+		resizeObserver.observe(navbarElement);
+	});
+
+	onDestroy(() => {
+		resizeObserver?.disconnect();
+	});
 </script>
 
-<nav>
+<nav bind:this={navbarElement}>
 	<div class="main-header">
 		<a href="/">Besim Gürbüz</a>
 	</div>
 	<div class="right-section">
-		<a href="/my-skills">My Skills</a>
-		<a href="/contact">Contact</a>
-		<ThemeSwitcher />
+		{#if !displayInDropdown}
+			<a href="/my-skills">My Skills</a>
+			<a href="/contact">Contact</a>
+			<ThemeSwitcher />
+		{:else}
+			<SidebarMenu />
+		{/if}
 	</div>
 </nav>
 
