@@ -46,17 +46,22 @@
 		margin: 0;
 		background-color: var(--app-background-color);
 		font-family: var(--app-font-family);
-		min-height: 100vh;
+		height: 100%;
 		display: flex;
 		flex-direction: column;
+		overflow-x: hidden;
 		padding: 0 16%;
 
 		@media (max-width: 1090px) {
 			padding: 0 100px;
 		}
 
-		@media (max-width: 780px) {
-			padding: 0 50px;
+		@media (max-width: 880px) {
+			padding: 0 23px;
+		}
+
+		@media (max-width: 345px) {
+			padding: 0 8px;
 		}
 	}
 </style>

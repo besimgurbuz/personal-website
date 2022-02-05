@@ -21,7 +21,7 @@
 	.welcome-area {
 		margin: 110px 40px 0 40px;
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 		grid-template-rows: 340px;
 
 		.details {
@@ -32,7 +32,15 @@
 				margin: 0;
 				font-size: 20px;
 				max-width: 500px;
+
+				@media (max-width: 325px) {
+					font-size: 16px;
+				}
 			}
+		}
+
+		@media (max-width: 1080px) {
+			margin: 80px 10px 0 10px;
 		}
 	}
 </style>

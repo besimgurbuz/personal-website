@@ -52,6 +52,10 @@
 			a {
 				color: var(--app-text-color);
 			}
+
+			@media (max-width: 325px) {
+				font-size: 25px;
+			}
 		}
 
 		.right-section {
