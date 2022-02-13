@@ -1,4 +1,5 @@
 <script>
+	import ProjectsSection from '$lib/my-skills/ProjectsSection.svelte';
 	import ToolsSection from '$lib/my-skills/ToolsSection.svelte';
 </script>
 
@@ -12,6 +13,10 @@
 		experience. I like learning new things. Here are my favorite tools in my toolbox;
 	</p>
 	<ToolsSection />
+	<div class="my-projects">
+		<h2 class="my-projects-header">My projects</h2>
+		<ProjectsSection />
+	</div>
 </div>
 
 <style lang="scss">
@@ -25,6 +30,14 @@
 
 			@media (max-width: 480px) {
 				width: 300px;
+			}
+		}
+
+		.my-projects {
+			margin-top: 90px;
+
+			.my-projects-header {
+				font-size: 20px;
 			}
 		}
 	}

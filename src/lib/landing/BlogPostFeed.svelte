@@ -1,8 +1,9 @@
 <script lang="ts">
+	import type { MediumFeed } from '$lib/models/medium-feed';
 	import BlogPostSkeleton from './BlogPostSkeleton.svelte';
 	import Post from './Post.svelte';
 
-	async function getBlogPostFeed() {
+	async function getBlogPostFeed(): Promise<MediumFeed> {
 		const response = await fetch('http://localhost:8080/api/v1/blog');
 
 		if (response.ok) {

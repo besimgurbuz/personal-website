@@ -1,9 +1,10 @@
 <script lang="ts">
+	import type { RecentActivityResponse } from '$lib/models/recent-activity';
 	import LatelyIcon from '../icons/LatelyIcon.svelte';
 	import ActivityBadge from './ActivityBadge.svelte';
 	import ActivitySkeleton from './ActivitySkeleton.svelte';
 
-	async function getRecentActivity() {
+	async function getRecentActivity(): Promise<RecentActivityResponse> {
 		const response = await fetch('http://localhost:8080/api/v1/recent');
 		const body = await response.json();
 
