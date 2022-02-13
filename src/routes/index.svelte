@@ -1,5 +1,6 @@
 <script>
 	import Image from '$lib/Image.svelte';
+	import RecentActivity from '$lib/RecentActivity.svelte';
 </script>
 
 <svelte:head>
@@ -14,6 +15,12 @@
 			I'm a Software Engineer who likes to listen to classical music, play video games, do some amateur
 			UI/UX stuff and drink Turkish coffee (a lot..)
 		</p>
+		<p class="welcoming-text">
+			I like to create well-thought, tested, and continuously evolved products.
+		</p>
+		<div class="activities">
+			<RecentActivity />
+		</div>
 	</div>
 </div>
 
@@ -21,12 +28,14 @@
 	.welcome-area {
 		margin: 110px 40px 0 40px;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-		grid-template-rows: 340px;
+		grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
 
 		.details {
 			display: flex;
+			flex-direction: column;
 			align-items: center;
+			justify-content: center;
+			gap: 1rem;
 
 			.welcoming-text {
 				margin: 0;
@@ -36,6 +45,10 @@
 				@media (max-width: 325px) {
 					font-size: 16px;
 				}
+			}
+
+			.activities {
+				margin-top: 48px;
 			}
 		}
 

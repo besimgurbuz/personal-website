@@ -30,6 +30,9 @@
 	.app {
 		// variables
 		--app-background-color: #0c101c;
+		--app-color-1: #131929;
+		--app-color-2: #171d2e;
+		--app-color-3: #2a3144;
 		--app-primary-color: #ed5639;
 		--app-text-color: #ffffff;
 		--app-link-color: #58a6ff;
@@ -37,6 +40,9 @@
 
 		&.light {
 			--app-background-color: #ffffff;
+			--app-color-1: #f1f1f1;
+			--app-color-2: #131929;
+			--app-color-3: #131929;
 			--app-primary-color: #f07e40;
 			--app-text-color: #231d43;
 			--app-link-color: #0969da;

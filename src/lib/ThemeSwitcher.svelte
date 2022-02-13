@@ -1,8 +1,10 @@
 <script lang="ts">
+	import closedLamp from '$lib/assets/lamp_closed.svg';
+	import openedLamp from '$lib/assets/lamp_opened.svg';
 	import { theme } from './store';
 
 	$: isLightTheme = $theme === 'light';
-	$: iconSource = `lamp_${isLightTheme ? 'opened' : 'closed'}.svg`;
+	$: iconSource = isLightTheme ? openedLamp : closedLamp;
 </script>
 
 <button on:click={() => theme.set(isLightTheme ? 'dark' : 'light')}>

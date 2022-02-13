@@ -23,6 +23,7 @@
 		.dropdown-menu-button {
 			background: transparent;
 			border: none;
+			cursor: pointer;
 		}
 
 		.sidebar-menu {
