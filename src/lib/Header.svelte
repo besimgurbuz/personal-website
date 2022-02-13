@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { onDestroy, onMount } from 'svelte';
-	import SidebarMenu from './SidebarMenu.svelte';
+	import DropdownMenu from './DropdownMenu.svelte';
 	import { routes } from './store';
 	import ThemeSwitcher from './ThemeSwitcher.svelte';
 
@@ -40,7 +40,7 @@
 			{/each}
 			<ThemeSwitcher />
 		{:else}
-			<SidebarMenu />
+			<DropdownMenu />
 		{/if}
 	</div>
 </nav>
