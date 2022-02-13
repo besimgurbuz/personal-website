@@ -31,6 +31,11 @@
 			<BlogPostSkeleton />
 		</div>
 	{:then feed}
+		{#if feed.items.length === 0}
+			<div class="card">
+				<p>There are no blog posts yet. I'm writing on great topics, try again later.</p>
+			</div>
+		{/if}
 		{#each feed.items as item}
 			<Post
 				title={item.title}
