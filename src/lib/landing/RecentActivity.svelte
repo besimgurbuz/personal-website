@@ -5,7 +5,7 @@
 	import ActivitySkeleton from './ActivitySkeleton.svelte';
 
 	async function getRecentActivity(): Promise<RecentActivityResponse> {
-		const response = await fetch('http://localhost:8080/api/v1/recent');
+		const response = await fetch('https://besimgurbuz-dev-be.herokuapp.com/api/v1/recent');
 		const body = await response.json();
 
 		if (response.ok) {

@@ -4,7 +4,7 @@
 	import Post from './Post.svelte';
 
 	async function getBlogPostFeed(): Promise<MediumFeed> {
-		const response = await fetch('http://localhost:8080/api/v1/blog');
+		const response = await fetch('https://besimgurbuz-dev-be.herokuapp.com/api/v1/blog');
 
 		if (response.ok) {
 			return await response.json();

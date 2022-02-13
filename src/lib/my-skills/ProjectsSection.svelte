@@ -4,7 +4,7 @@
 	import ProjectSkeleton from './ProjectSkeleton.svelte';
 
 	async function getRepositories(): Promise<GithubRepository[]> {
-		const response = await fetch('http://localhost:8080/api/v1/github');
+		const response = await fetch('https://besimgurbuz-dev-be.herokuapp.com/api/v1/github');
 
 		if (response.ok) {
 			return await response.json();
