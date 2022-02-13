@@ -49,5 +49,10 @@
 		background-color: var(--app-color-1);
 		border-radius: 5px;
 		color: var(--app-text-color);
+
+		@media (max-width: 500px) {
+			width: 270px;
+			gap: 0.3rem;
+		}
 	}
 </style>

@@ -4,6 +4,7 @@
 
 <style lang="scss">
 	footer {
+		padding-top: 100px;
 		margin-top: auto;
 		text-align: center;
 

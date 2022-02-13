@@ -25,3 +25,11 @@ a {
 	color: var(--app-link-color);
 	text-decoration: none;
 }
+
+/* global classes */
+.card {
+	background-color: var(--app-color-1);
+	border-radius: 5px;
+	color: var(--app-text-color);
+	padding: 14px 18px;
+}

@@ -1,5 +1,5 @@
 <script>
-	import Skeleton from './Skeleton.svelte';
+	import Skeleton from './primitives/Skeleton.svelte';
 </script>
 
 <div class="activity-skeleton">

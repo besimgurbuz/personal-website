@@ -1,4 +1,5 @@
 <script>
+	import BlogPostFeed from '$lib/BlogPostFeed.svelte';
 	import Image from '$lib/Image.svelte';
 	import RecentActivity from '$lib/RecentActivity.svelte';
 </script>
@@ -22,6 +23,10 @@
 			<RecentActivity />
 		</div>
 	</div>
+</div>
+<div class="latest-blog-posts">
+	<h2>My latest blog posts</h2>
+	<BlogPostFeed />
 </div>
 
 <style lang="scss">
@@ -54,6 +59,17 @@
 
 		@media (max-width: 1080px) {
 			margin: 80px 10px 0 10px;
+		}
+	}
+	.latest-blog-posts {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		margin-top: 90px;
+
+		h2 {
+			margin: 0;
+			font-size: 20px;
 		}
 	}
 </style>

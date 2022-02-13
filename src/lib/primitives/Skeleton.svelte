@@ -12,7 +12,7 @@
 
 <style>
 	.skeleton {
-		background-color: var(--baseColor);
+		background-color: var(--app-color-2);
 		background-image: linear-gradient(
 			90deg,
 			var(--app-color-2),
