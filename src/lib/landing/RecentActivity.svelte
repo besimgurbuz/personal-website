@@ -1,7 +1,7 @@
 <script lang="ts">
+	import LatelyIcon from '../icons/LatelyIcon.svelte';
 	import ActivityBadge from './ActivityBadge.svelte';
 	import ActivitySkeleton from './ActivitySkeleton.svelte';
-	import LatelyIcon from './icons/LatelyIcon.svelte';
 
 	async function getRecentActivity() {
 		const response = await fetch('http://localhost:8080/api/v1/recent');
@@ -17,7 +17,7 @@
 	const promise = getRecentActivity();
 </script>
 
-<div class="lately-activity">
+<div class="card lately-activity">
 	<LatelyIcon color="var(--app-primary-color)" />
 	{#await promise}
 		<ActivitySkeleton />
@@ -33,6 +33,8 @@
 			name={recentActivity.spotify.albumName}
 			type="listening"
 		/>
+	{:catch}
+		<p>An error occurred while trying to fetch my latest activity. Please try again later.</p>
 	{/await}
 </div>
 
@@ -46,9 +48,6 @@
 		padding: 14px 18px;
 		width: 300px;
 		align-self: flex-end;
-		background-color: var(--app-color-1);
-		border-radius: 5px;
-		color: var(--app-text-color);
 
 		@media (max-width: 500px) {
 			width: 270px;

@@ -1,7 +1,7 @@
 <script>
-	import BlogPostFeed from '$lib/BlogPostFeed.svelte';
-	import Image from '$lib/Image.svelte';
-	import RecentActivity from '$lib/RecentActivity.svelte';
+	import BlogPostFeed from '$lib/landing/BlogPostFeed.svelte';
+	import Image from '$lib/landing/Image.svelte';
+	import RecentActivity from '$lib/landing/RecentActivity.svelte';
 </script>
 
 <svelte:head>

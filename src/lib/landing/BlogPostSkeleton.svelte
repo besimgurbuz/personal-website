@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Skeleton from './primitives/Skeleton.svelte';
+	import Skeleton from '../primitives/Skeleton.svelte';
 </script>
 
 <div class="blog-post-skeleton">

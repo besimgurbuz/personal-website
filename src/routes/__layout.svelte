@@ -57,6 +57,11 @@
 		flex-direction: column;
 		overflow-x: hidden;
 		padding: 0 16%;
+		color: var(--app-text-color);
+
+		&::selection {
+			background-color: var(--app-primary-color);
+		}
 
 		@media (max-width: 1090px) {
 			padding: 0 100px;

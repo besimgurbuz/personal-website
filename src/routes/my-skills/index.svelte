@@ -1,5 +1,31 @@
+<script>
+	import ToolsSection from '$lib/my-skills/ToolsSection.svelte';
+</script>
+
 <svelte:head>
 	<title>Besim Gürbüz - My Skills</title>
 </svelte:head>
 
-<h1>My skills</h1>
+<div class="my-skills-wrapper">
+	<p class="passion-text">
+		I enjoy creating software products that are well designed with great performance and user
+		experience. I like learning new things. Here are my favorite tools in my toolbox;
+	</p>
+	<ToolsSection />
+</div>
+
+<style lang="scss">
+	.my-skills-wrapper {
+		margin-top: 110px;
+
+		.passion-text {
+			width: 450px;
+			font-size: 18px;
+			margin-bottom: 48px;
+
+			@media (max-width: 480px) {
+				width: 300px;
+			}
+		}
+	}
+</style>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { dateTimeFormat } from './store';
+	import { dateTimeFormat } from '../store';
 
 	export let title: string;
 	export let url: string;

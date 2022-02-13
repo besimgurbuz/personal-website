@@ -1,11 +1,15 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import { onDestroy, onMount } from 'svelte';
 	import SidebarMenu from './SidebarMenu.svelte';
+	import { routes } from './store';
 	import ThemeSwitcher from './ThemeSwitcher.svelte';
 
 	let navbarElement: HTMLElement;
 	let resizeObserver: ResizeObserver;
 	let displayInDropdown = false;
+
+	$: activeRoute = $page.url.pathname;
 
 	onMount(() => {
 		resizeObserver = new ResizeObserver(([resizeEntry]) => {
@@ -31,8 +35,9 @@
 	</div>
 	<div class="right-section">
 		{#if !displayInDropdown}
-			<a href="/my-skills">My Skills</a>
-			<a href="/contact">Contact</a>
+			{#each $routes as route}
+				<a href={route.path} class:active={route.path === activeRoute}>{route.label}</a>
+			{/each}
 			<ThemeSwitcher />
 		{:else}
 			<SidebarMenu />
@@ -71,7 +76,7 @@
 					text-decoration: underline;
 				}
 
-				&:active {
+				&.active {
 					text-decoration: underline;
 				}
 			}

@@ -17,16 +17,16 @@
 
 <div class="blog-posts">
 	{#await promise}
-		<div class="card post">
+		<div class="card">
 			<BlogPostSkeleton />
 		</div>
-		<div class="card post">
+		<div class="card">
 			<BlogPostSkeleton />
 		</div>
-		<div class="card post">
+		<div class="card">
 			<BlogPostSkeleton />
 		</div>
-		<div class="card post">
+		<div class="card">
 			<BlogPostSkeleton />
 		</div>
 	{:then feed}
@@ -38,6 +38,10 @@
 				publishDate={item.pubDate}
 			/>
 		{/each}
+	{:catch}
+		<div class="card">
+			<p>An error occurred while trying to fetch my latest blog posts. Please try again later</p>
+		</div>
 	{/await}
 </div>
 
