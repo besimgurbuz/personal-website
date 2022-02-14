@@ -24,16 +24,23 @@
 		<ActivitySkeleton />
 		<ActivitySkeleton />
 	{:then recentActivity}
-		<ActivityBadge
-			imgSrc={recentActivity.steam.iconUrl}
-			name={recentActivity.steam.gameName}
-			type="playing"
-		/>
-		<ActivityBadge
-			imgSrc={recentActivity.spotify.image.url}
-			name={recentActivity.spotify.albumName}
-			type="listening"
-		/>
+		{#if recentActivity.steam}
+			<ActivityBadge
+				imgSrc={recentActivity.steam?.iconUrl}
+				name={recentActivity.steam?.gameName}
+				type="playing"
+			/>
+		{/if}
+		{#if recentActivity.spotify}
+			<ActivityBadge
+				imgSrc={recentActivity.spotify?.image.url}
+				name={recentActivity.spotify?.albumName}
+				type="listening"
+			/>
+		{/if}
+		{#if !recentActivity.steam && !recentActivity.spotify}
+			<p>It seems I haven't been listening to music or playing video games lately.</p>
+		{/if}
 	{:catch}
 		<p>An error occurred while trying to fetch my latest activity. Please try again later.</p>
 	{/await}
@@ -47,11 +54,9 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 14px 18px;
-		width: 300px;
 		align-self: flex-end;
 
 		@media (max-width: 500px) {
-			width: 270px;
 			grid-gap: 0.3rem;
 		}
 	}
