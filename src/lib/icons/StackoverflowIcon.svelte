@@ -1,11 +1,5 @@
-<svg
-	width="inherit"
-	height="inherit"
-	viewBox="0 0 32 32"
-	fill="none"
-	xmlns="http://www.w3.org/2000/svg"
->
-	<path d="M26 28.5405V20.7568H30V32H0V20.7568H4V28.5405H26Z" fill="#ED5639" />
+<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M26 28.5405V20.7568H30V32H0V20.7568H4V28.5405H26Z" fill="var(--app-primary-color)" />
 	<path
 		d="M21.5 0L18.8 1.72973L28.7 13.2324L31.4 11.5027L21.5 0ZM26 15.9135L13.3 6.74595L15.4 4.58378L28.1 13.7514L26 15.9135ZM9.1 13.1459L24.1 19.2L25.5 16.6054L10.5 10.5514L9.1 13.1459ZM23.1 22.4778L23.78 19.9265L7.68 17.0292L7 19.8919L23.1 22.4778V22.4778ZM23 25.9459H7V23.3514H23V25.9459Z"
 		fill="var(--app-primary-color)"
