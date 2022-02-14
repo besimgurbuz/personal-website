@@ -4,7 +4,7 @@
 	import ProjectSkeleton from './ProjectSkeleton.svelte';
 
 	async function getRepositories(): Promise<GithubRepository[]> {
-		const response = await fetch('https://besimgurbuz-dev-be.herokuapp.com/api/v1/github');
+		const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/github`);
 
 		if (response.ok) {
 			return await response.json();
@@ -39,6 +39,6 @@
 	.projects {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 20px 50px;
+		grid-gap: 20px 50px;
 	}
 </style>

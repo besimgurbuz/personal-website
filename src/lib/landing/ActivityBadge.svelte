@@ -17,7 +17,7 @@
 <style lang="scss">
 	.activity-badge {
 		display: flex;
-		gap: 8px;
+		grid-gap: 8px;
 
 		img {
 			width: 42px;

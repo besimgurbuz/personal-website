@@ -24,7 +24,7 @@
 		pointer-events: none;
 		position: absolute;
 		top: -120px;
-		right: -200px;
+		right: -150px;
 		display: inline-block;
 		transform: rotateZ(-6deg);
 		color: var(--app-primary-color);
@@ -35,19 +35,19 @@
 
 		@media (max-width: 1250px) {
 			width: 250px;
-			top: -120px;
 			right: -70px;
 			transform: rotateZ(-12deg);
 		}
 
-		@media (max-width: 705px) {
-			right: -45px;
-			transform: rotateZ(-12deg);
+		@media (max-width: 714px) {
+			top: -110px;
+			right: -35px;
+			transform: rotateZ(-18deg);
 		}
 
 		@media (max-width: 325px) {
 			right: -25px;
-			transform: rotateZ(-16deg);
+			transform: rotateZ(-20deg);
 		}
 	}
 </style>

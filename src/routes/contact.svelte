@@ -42,7 +42,7 @@
 		justify-content: center;
 		align-items: center;
 		margin-top: 240px;
-		gap: 90px;
+		grid-gap: 90px;
 
 		a {
 			color: var(--app-primary-color);
@@ -60,7 +60,7 @@
 			display: flex;
 			align-items: center;
 			flex-wrap: wrap;
-			gap: 70px;
+			grid-gap: 70px;
 
 			a {
 				width: 32px;
@@ -69,7 +69,7 @@
 		}
 
 		@media (max-width: 880px) {
-			gap: 60px;
+			grid-gap: 60px;
 
 			h1 {
 				font-size: 32px;
@@ -84,26 +84,26 @@
 		}
 
 		@media (max-width: 615px) {
-			gap: 40px;
+			grid-gap: 40px;
 
 			h1 {
 				font-size: 24px;
 			}
 
 			.socials {
-				gap: 50px;
+				grid-gap: 50px;
 			}
 		}
 
 		@media (max-width: 450px) {
-			gap: 20px;
+			grid-gap: 20px;
 
 			h1 {
 				font-size: 18px;
 			}
 
 			.socials {
-				gap: 20px;
+				grid-gap: 20px;
 
 				a {
 					width: 18px;

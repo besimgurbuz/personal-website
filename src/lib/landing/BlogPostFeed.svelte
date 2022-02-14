@@ -4,7 +4,7 @@
 	import Post from './Post.svelte';
 
 	async function getBlogPostFeed(): Promise<MediumFeed> {
-		const response = await fetch('https://besimgurbuz-dev-be.herokuapp.com/api/v1/blog');
+		const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/blog`);
 
 		if (response.ok) {
 			return await response.json();
@@ -55,6 +55,6 @@
 	.blog-posts {
 		display: flex;
 		flex-direction: column;
-		gap: 20px;
+		grid-gap: 20px;
 	}
 </style>

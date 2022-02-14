@@ -66,7 +66,7 @@
 		.right-section {
 			align-self: center;
 			display: flex;
-			gap: 29px;
+			grid-gap: 29px;
 			font-size: 20px;
 
 			a {

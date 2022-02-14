@@ -14,7 +14,12 @@
 </script>
 
 <div class="dropdown-menu">
-	<button bind:this={button} class="dropdown-menu-button" on:click={() => (opened = !opened)}>
+	<button
+		bind:this={button}
+		class="dropdown-menu-button"
+		on:click={() => (opened = !opened)}
+		aria-label="Dropdown open/close button"
+	>
 		<MenuIcon switchToClose={opened} color="var(--app-text-color)" />
 	</button>
 	{#if opened}
@@ -57,7 +62,7 @@
 			right: 0;
 			display: flex;
 			flex-direction: column;
-			gap: 20px;
+			grid-gap: 20px;
 			padding: 18px;
 
 			a {

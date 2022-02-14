@@ -11,7 +11,7 @@
 <style lang="scss">
 	.tool {
 		display: flex;
-		gap: 8px;
+		grid-gap: 8px;
 		height: 42px;
 		align-items: center;
 

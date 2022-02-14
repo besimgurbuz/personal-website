@@ -35,10 +35,10 @@
 	.tools {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 20px 32px;
+		grid-gap: 20px 32px;
 
 		@media (max-width: 520px) {
-			gap: 15px;
+			grid-gap: 15px;
 		}
 	}
 </style>

@@ -13,6 +13,10 @@
 
 <style lang="scss">
 	button {
+		display: flex;
+		justify-content: flex-end;
+		width: 28px;
+		height: 28px;
 		cursor: pointer;
 		padding: 2px;
 		border: none;

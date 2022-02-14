@@ -21,14 +21,14 @@
 	.project-skeleton {
 		display: flex;
 		flex-direction: column;
-		gap: 10px;
+		grid-gap: 10px;
 		width: 425px;
 		height: 140px;
 
 		.description {
 			display: flex;
 			flex-direction: column;
-			gap: 8px;
+			grid-gap: 8px;
 		}
 
 		.bottom {
@@ -39,7 +39,7 @@
 			.counts {
 				width: 20%;
 				display: flex;
-				gap: 8px;
+				grid-gap: 8px;
 			}
 		}
 	}

@@ -13,12 +13,12 @@
 <style lang="scss">
 	.activity-skeleton {
 		display: flex;
-		gap: 8px;
+		grid-gap: 8px;
 
 		.activity-skeleton-texts {
 			display: flex;
 			flex-direction: column;
-			gap: 5px;
+			grid-gap: 5px;
 		}
 	}
 </style>

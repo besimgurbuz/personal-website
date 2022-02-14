@@ -5,7 +5,7 @@
 	import ActivitySkeleton from './ActivitySkeleton.svelte';
 
 	async function getRecentActivity(): Promise<RecentActivityResponse> {
-		const response = await fetch('https://besimgurbuz-dev-be.herokuapp.com/api/v1/recent');
+		const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/v1/recent`);
 		const body = await response.json();
 
 		if (response.ok) {
@@ -43,7 +43,7 @@
 	.lately-activity {
 		position: relative;
 		display: flex;
-		gap: 1rem;
+		grid-gap: 1rem;
 		justify-content: space-between;
 		align-items: center;
 		padding: 14px 18px;
@@ -52,7 +52,7 @@
 
 		@media (max-width: 500px) {
 			width: 270px;
-			gap: 0.3rem;
+			grid-gap: 0.3rem;
 		}
 	}
 </style>

@@ -15,7 +15,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		gap: 4px;
+		grid-gap: 4px;
 
 		.header {
 			display: flex;

@@ -8,6 +8,7 @@
 </script>
 
 <svelte:head>
+	<meta name="theme-color" content={light ? '#ffffff' : '#0c101c'} />
 	<link
 		href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap"
 		rel="stylesheet"

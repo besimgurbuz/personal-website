@@ -40,7 +40,7 @@
 	.project {
 		display: flex;
 		flex-direction: column;
-		gap: 10px;
+		grid-gap: 10px;
 		width: 425px;
 		height: 140px;
 
@@ -52,11 +52,11 @@
 			.counts {
 				font-size: 14px;
 				display: flex;
-				gap: 8px;
+				grid-gap: 8px;
 
 				.count {
 					display: flex;
-					gap: 2px;
+					grid-gap: 2px;
 				}
 			}
 		}

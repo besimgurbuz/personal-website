@@ -1,10 +1,10 @@
 <script>
-	import thisIsMeSrc from '$lib/assets/this_is_me.jpeg';
+	import thisIsMeSrc from '$lib/assets/this_is_me.png';
 	import ThisIsMeArrow from '../icons/ThisIsMeArrow.svelte';
 </script>
 
 <div class="this-is-me">
-	<img id="photo" src={thisIsMeSrc} alt="Besim Gürbüz's photograph" />
+	<img id="photo" width="312" height="330" src={thisIsMeSrc} alt="Besim Gürbüz's photograph" />
 	<ThisIsMeArrow color="var(--app-primary-color)" />
 </div>
 
@@ -21,8 +21,6 @@
 		}
 
 		#photo {
-			min-width: 100%;
-			height: 330px;
 			object-fit: cover;
 			border-radius: 13px;
 			position: relative;

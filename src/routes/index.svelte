@@ -40,7 +40,7 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
-			gap: 1rem;
+			grid-gap: 1rem;
 
 			.welcoming-text {
 				margin: 0;
@@ -64,7 +64,7 @@
 	.latest-blog-posts {
 		display: flex;
 		flex-direction: column;
-		gap: 20px;
+		grid-gap: 20px;
 		margin-top: 90px;
 
 		h2 {

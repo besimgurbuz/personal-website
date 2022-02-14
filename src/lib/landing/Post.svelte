@@ -30,7 +30,7 @@
 		.header {
 			display: flex;
 			justify-content: space-between;
-			gap: 1rem;
+			grid-gap: 1rem;
 
 			.title {
 				margin: 0;
