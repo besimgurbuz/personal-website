@@ -13,10 +13,6 @@
 		href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap"
 		rel="stylesheet"
 	/>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Zeyada&display=swap"
-		rel="stylesheet"
-	/>
 </svelte:head>
 
 <div class="app" class:light>
