@@ -1,6 +1,6 @@
 <script>
 	import ProjectsSection from '$lib/my-skills/ProjectsSection.svelte';
-	import ToolsSection from '$lib/my-skills/ToolsSection.svelte';
+	import SkillsSection from '$lib/my-skills/SkillsSection.svelte';
 </script>
 
 <svelte:head>
@@ -12,7 +12,7 @@
 		I enjoy creating software products that are well designed with great performance and user
 		experience. I like learning new things. Here are my favorite tools in my toolbox;
 	</p>
-	<ToolsSection />
+	<SkillsSection />
 	<div class="my-projects">
 		<h2 class="my-projects-header">My projects</h2>
 		<ProjectsSection />

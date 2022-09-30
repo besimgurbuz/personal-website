@@ -9,6 +9,7 @@
 		if (response.ok) {
 			return await response.json();
 		} else {
+			throw new Error("Couldn't fetched projects.");
 		}
 	}
 
@@ -32,6 +33,8 @@
 				url={repo.html_url}
 			/>
 		{/each}
+		{:catch}
+		<p>An error occurred while trying to fetch my projects. Please try again later.</p>
 	{/await}
 </div>
 
