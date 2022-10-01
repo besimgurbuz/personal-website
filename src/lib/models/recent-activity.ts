@@ -17,4 +17,5 @@ export interface SpotifyActivity {
 export interface SteamActivity {
 	gameName: string;
 	iconUrl: string;
+	storeUrl: string;
 }

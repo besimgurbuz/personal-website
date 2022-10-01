@@ -1,7 +1,6 @@
 <script lang="ts">
   import type { Skill } from '$lib/models/skill';
-  import { quintOut } from "svelte/easing";
-  import { scale } from 'svelte/transition';
+  import { scale, slide } from 'svelte/transition';
   import Chip from '../primitives/Chip.svelte';
   import ToolCard from './ToolCard.svelte';
 
@@ -12,7 +11,7 @@
   let selectedType: 'all' | string = 'all';
 </script>
 
-<div class="filterable-skills">
+<div class="filterable-skills" transition:slide>
   <div class="chips">
     {#each Array.from(skillTypes) as type}
       <Chip label={type} on:click={() => selectedType = type} active={selectedType === type}/>
@@ -20,8 +19,8 @@
   </div>
   <div class="skills">
     {#each filteredSkills as skill}
-    <div transition:scale={{delay: 250, duration: 300, easing: quintOut}}>
-      <ToolCard  icon={skill.iconUrl} label={skill.label} />
+    <div transition:scale={{delay: 100, duration: 100}}>
+      <ToolCard  icon={skill.iconUrl} label={skill.label} inProgress={skill.inProgress} />
     </div>
     {/each}
   </div>
@@ -35,7 +34,8 @@
 
     .chips {
       display: flex;
-      column-gap: .5em;
+      flex-wrap: wrap;
+      gap: .5em;
       align-self: flex-end;
     }
 

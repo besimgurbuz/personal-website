@@ -29,6 +29,7 @@
 				imgSrc={recentActivity.steam?.iconUrl}
 				name={recentActivity.steam?.gameName}
 				type="playing"
+				link={recentActivity.steam?.storeUrl}
 			/>
 		{/if}
 		{#if recentActivity.spotify}
@@ -36,6 +37,7 @@
 				imgSrc={recentActivity.spotify?.image.url}
 				name={recentActivity.spotify?.albumName}
 				type="listening"
+				link={recentActivity.spotify?.url}
 			/>
 		{/if}
 		{#if !recentActivity.steam && !recentActivity.spotify}

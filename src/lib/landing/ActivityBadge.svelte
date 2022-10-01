@@ -2,6 +2,7 @@
 	export let name: string;
 	export let imgSrc: string;
 	export let type: 'playing' | 'listening';
+	export let link = '';
 
 	$: activtyTitle = type === 'playing' ? 'Playing' : 'Listening';
 </script>
@@ -10,7 +11,13 @@
 	<img src={imgSrc} alt={`What I am currently ${type}.`} />
 	<div class="activity-texts">
 		<p>{activtyTitle}</p>
-		<p title={name}>{name}</p>
+		{#if link !== ''}
+			<a href={link} title={name} target="_blank">
+				<p>{name}</p>
+			</a>
+			{:else}
+			<p title={name}>{name}</p>
+		{/if}
 	</div>
 </div>
 
@@ -29,10 +36,20 @@
 			p {
 				padding: 0;
 				margin: 0;
-				width: 86px;
+				width: fit-content;
 				white-space: nowrap;
-				overflow: hidden;
 				text-overflow: ellipsis;
+			}
+
+			a > p {
+				color: var(--app-link-color);
+			}
+
+			@media (max-width: 900px) {
+				p {
+					width: 86px;
+					overflow: hidden;
+				}
 			}
 		}
 	}

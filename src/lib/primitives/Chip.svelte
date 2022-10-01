@@ -26,7 +26,8 @@
     }
 
     &.active {
-      outline: 2px solid var(--app-color-2);
+      padding: 1px 10px;
+      border: 2px solid var(--app-color-2);
     }
   }
 </style>
