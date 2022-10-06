@@ -21,7 +21,7 @@
       margin: 0;
     }
 
-    :hover {
+    &:hover {
       cursor: pointer;
     }
 
