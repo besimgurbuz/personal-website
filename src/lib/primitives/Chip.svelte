@@ -15,13 +15,14 @@
     width: fit-content;
     height: fit-content;
     padding: 3px 12px;
+    user-select: none;
 
     p {
       padding: 0;
       margin: 0;
     }
 
-    :hover {
+    &:hover {
       cursor: pointer;
     }
 
