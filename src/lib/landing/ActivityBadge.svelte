@@ -15,7 +15,7 @@
 			<a href={link} title={name} target="_blank">
 				<p>{name}</p>
 			</a>
-			{:else}
+		{:else}
 			<p title={name}>{name}</p>
 		{/if}
 	</div>
@@ -39,16 +39,23 @@
 				width: fit-content;
 				white-space: nowrap;
 				text-overflow: ellipsis;
+				overflow: hidden;
+				width: 160px;
 			}
 
 			a > p {
 				color: var(--app-link-color);
 			}
 
+			@media (max-width: 1500px) {
+				p {
+					width: 100px;
+				}
+			}
+
 			@media (max-width: 900px) {
 				p {
 					width: 86px;
-					overflow: hidden;
 				}
 			}
 		}
