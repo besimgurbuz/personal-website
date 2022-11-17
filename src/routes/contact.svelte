@@ -10,7 +10,7 @@
 	<title>Besim Gürbüz - Contact</title>
 </svelte:head>
 
-<div class="contact">
+<div class="contact fade-out">
 	<h1>
 		<a href="mailto:contact@besimgurbuz.dev?subject=Mail from besimgurbuz.dev"
 			>contact@besimgurbuz.dev</a

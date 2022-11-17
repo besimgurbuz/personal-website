@@ -29,7 +29,7 @@
 	});
 </script>
 
-<nav bind:this={navbarElement}>
+<nav bind:this={navbarElement} class="fade-in">
 	<div class="main-header">
 		<a href="/">Besim Gürbüz</a>
 	</div>

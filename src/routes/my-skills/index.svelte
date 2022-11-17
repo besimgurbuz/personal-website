@@ -8,7 +8,7 @@
 </svelte:head>
 
 <div class="my-skills-wrapper">
-	<p class="passion-text">
+	<p class="passion-text fade-out">
 		I enjoy creating software products that are well designed with great performance and user
 		experience. I like learning new things. Here are my favorite tools in my toolbox;
 	</p>

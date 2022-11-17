@@ -8,7 +8,7 @@
 	<title>Besim Gürbüz</title>
 </svelte:head>
 
-<div class="welcome-area">
+<div class="welcome-area fade-out">
 	<Image />
 	<div class="details">
 		<p class="welcoming-text">
@@ -24,7 +24,7 @@
 		</div>
 	</div>
 </div>
-<div class="latest-blog-posts">
+<div class="latest-blog-posts fade-out">
 	<h2>My latest blog posts</h2>
 	<BlogPostFeed />
 </div>

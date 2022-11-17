@@ -41,7 +41,7 @@
 		display: flex;
 		flex-direction: column;
 		grid-gap: 10px;
-		width: 425px;
+		width: calc(min(50%, 425px));
 		height: 140px;
 
 		.bottom {
