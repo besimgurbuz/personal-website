@@ -1,47 +1,30 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { onDestroy, onMount } from 'svelte';
 	import DropdownMenu from './DropdownMenu.svelte';
 	import { routes } from './store';
 	import ThemeSwitcher from './ThemeSwitcher.svelte';
 
-	let navbarElement: HTMLElement;
-	let resizeObserver: ResizeObserver;
-	let displayInDropdown = false;
-
 	$: activeRoute = $page.url.pathname;
-
-	onMount(() => {
-		resizeObserver = new ResizeObserver(([resizeEntry]) => {
-			const { contentRect } = resizeEntry;
-
-			if (contentRect.width <= 480) {
-				displayInDropdown = true;
-			} else {
-				displayInDropdown = false;
-			}
-		});
-		resizeObserver.observe(navbarElement);
-	});
-
-	onDestroy(() => {
-		resizeObserver?.disconnect();
-	});
 </script>
 
-<nav bind:this={navbarElement} class="fade-in">
-	<div class="main-header">
+<nav>
+	<div class="main-header fade-in">
 		<a href="/">Besim Gürbüz</a>
 	</div>
 	<div class="right-section">
-		{#if !displayInDropdown}
+		<div class="routes">
 			{#each $routes as route}
-				<a href={route.path} class:active={route.path === activeRoute}>{route.label}</a>
+				<a href={route.path} class:active={route.path === activeRoute} class="fade-in"
+					>{route.label}</a
+				>
 			{/each}
-			<ThemeSwitcher />
-		{:else}
+			<div class="fade-in">
+				<ThemeSwitcher />
+			</div>
+		</div>
+		<div class="dropdown">
 			<DropdownMenu />
-		{/if}
+		</div>
 	</div>
 </nav>
 
@@ -78,6 +61,24 @@
 
 				&.active {
 					text-decoration: underline;
+				}
+			}
+
+			.routes {
+				align-self: center;
+				display: none;
+				grid-gap: 29px;
+
+				@media (min-width: 500px) {
+					display: flex;
+				}
+			}
+
+			.dropdown {
+				display: none;
+
+				@media (max-width: 499px) {
+					display: flex;
 				}
 			}
 		}

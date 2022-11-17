@@ -33,7 +33,7 @@
 
 	svg {
 		rect {
-			transition: transform 200ms;
+			transition: transform 300ms;
 		}
 	}
 </style>
