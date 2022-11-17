@@ -40,9 +40,13 @@
 	.project {
 		display: flex;
 		flex-direction: column;
+		width: 40%;
 		grid-gap: 10px;
-		width: calc(min(50%, 425px));
 		height: 140px;
+
+		@media (max-width: 675px) {
+			width: 100%;
+		}
 
 		.bottom {
 			margin-top: auto;
