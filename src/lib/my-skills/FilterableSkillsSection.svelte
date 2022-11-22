@@ -21,7 +21,7 @@
 	</div>
 	<div class="skills">
 		{#each filteredSkills as skill}
-			<div in:scale={{ duration: 100 }}>
+			<div transition:scale={{ duration: 100 }}>
 				<ToolCard icon={skill.iconUrl} label={skill.label} inProgress={skill.inProgress} />
 			</div>
 		{/each}
