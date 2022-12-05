@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Skill } from '$lib/models/skill';
-	import { scale, slide } from 'svelte/transition';
+	import { scale } from 'svelte/transition';
 	import Chip from '../primitives/Chip.svelte';
 	import ToolCard from './ToolCard.svelte';
 
@@ -13,7 +13,7 @@
 	let selectedType: 'all' | string = 'all';
 </script>
 
-<div class="filterable-skills" in:slide={{ duration: 500 }}>
+<div class="filterable-skills">
 	<div class="chips">
 		{#each Array.from(skillTypes) as type}
 			<Chip label={type} on:click={() => (selectedType = type)} active={selectedType === type} />
