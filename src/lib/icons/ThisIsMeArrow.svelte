@@ -19,7 +19,7 @@
 	/>
 </svg>
 
-<style lang="scss">
+<style>
 	svg {
 		pointer-events: none;
 		position: absolute;
@@ -28,24 +28,32 @@
 		display: inline-block;
 		transform: rotateZ(-6deg);
 		color: var(--app-primary-color);
+	}
 
-		@media (max-width: 1700px) {
+	@media (max-width: 1700px) {
+		svg {
 			right: -150px;
 		}
+	}
 
-		@media (max-width: 1250px) {
+	@media (max-width: 1250px) {
+		svg {
 			width: 250px;
 			right: -70px;
 			transform: rotateZ(-12deg);
 		}
+	}
 
-		@media (max-width: 714px) {
+	@media (max-width: 714px) {
+		svg {
 			top: -110px;
 			right: -35px;
 			transform: rotateZ(-18deg);
 		}
+	}
 
-		@media (max-width: 325px) {
+	@media (max-width: 325px) {
+		svg {
 			right: -25px;
 			transform: rotateZ(-20deg);
 		}

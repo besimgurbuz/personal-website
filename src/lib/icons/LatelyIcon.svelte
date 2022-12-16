@@ -9,10 +9,18 @@
 	/>
 </svg>
 
-<style lang="scss">
+<style>
 	svg {
 		position: absolute;
 		top: -25px;
 		left: -40px;
+	}
+
+	@media (max-width: 415px) {
+		svg {
+			width: 63px;
+			height: 49px;
+			left: -20px;
+		}
 	}
 </style>

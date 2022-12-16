@@ -1,6 +1,6 @@
-export interface RecentActivityResponse {
-	spotify: SpotifyActivity;
-	steam: SteamActivity;
+export interface RecentActivity {
+	spotify?: SpotifyActivity;
+	steam?: SteamActitivy;
 }
 
 export interface SpotifyActivity {
@@ -9,12 +9,12 @@ export interface SpotifyActivity {
 	image: {
 		height: number;
 		url: string;
-		width: 64;
+		width: number;
 	};
 	url: string;
 }
 
-export interface SteamActivity {
+export interface SteamActitivy {
 	gameName: string;
 	iconUrl: string;
 	storeUrl: string;

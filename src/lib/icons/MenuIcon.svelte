@@ -26,14 +26,12 @@
 	<rect class:hidden={switchToClose} y="6" width={width / 2} height="2" rx="1" fill={color} />
 </svg>
 
-<style lang="scss">
+<style>
 	.hidden {
 		display: none;
 	}
 
-	svg {
-		rect {
-			transition: transform 300ms;
-		}
+	svg rect {
+		transition: transform 300ms;
 	}
 </style>
