@@ -1,0 +1,15 @@
+{
+	"background_color": "#0c101c",
+	"display": "fullscreen",
+	"description": "The website of Besim Gürbüz, who likes to develop well-thought, tested, and continuously evolved products.",
+	"name": "besimgurbuz.dev",
+	"short_name": "besimgurbuz",
+	"start_url": "/",
+	"icons": [
+		{
+			"src": "besimgurbuz-512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	]
+}
