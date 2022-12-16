@@ -23,7 +23,13 @@
 <style>
 	.project-list {
 		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+		grid-template-columns: 1fr 1fr;
 		grid-gap: 1rem;
+	}
+
+	@media (max-width: 620px) {
+		.project-list {
+			grid-template-columns: 1fr;
+		}
 	}
 </style>

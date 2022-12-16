@@ -70,9 +70,9 @@
 		text-decoration: underline;
 	}
 
-	@media (max-width: 325px) {
-		.header-banner {
-			font-size: 25px;
+	@media (min-width: 500px) {
+		.routes {
+			display: flex;
 		}
 	}
 
@@ -82,9 +82,9 @@
 		}
 	}
 
-	@media (min-width: 500px) {
-		.routes {
-			display: flex;
+	@media (max-width: 325px) {
+		.header-banner {
+			font-size: 25px;
 		}
 	}
 </style>

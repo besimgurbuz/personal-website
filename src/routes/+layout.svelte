@@ -67,9 +67,9 @@
 		background-color: var(--app-primary-color);
 	}
 
-	@media (max-width: 345px) {
+	@media (max-width: 1090px) {
 		.app {
-			padding: 0 8px;
+			padding: 0 100px;
 		}
 	}
 
@@ -79,9 +79,9 @@
 		}
 	}
 
-	@media (max-width: 1090px) {
+	@media (max-width: 345px) {
 		.app {
-			padding: 0 100px;
+			padding: 0 8px;
 		}
 	}
 </style>

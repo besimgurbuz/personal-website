@@ -23,6 +23,12 @@
 		position: relative;
 	}
 
+	@media (max-width: 1250px) {
+		.this-is-me-container img {
+			height: 280px;
+		}
+	}
+
 	@media (max-width: 325px) {
 		.this-is-me-container {
 			padding: 3rem 3rem 3rem 0;
@@ -31,12 +37,6 @@
 		.this-is-me-container img {
 			min-width: 0;
 			width: 200px;
-		}
-	}
-
-	@media (max-width: 1250px) {
-		.this-is-me-container img {
-			height: 280px;
 		}
 	}
 </style>

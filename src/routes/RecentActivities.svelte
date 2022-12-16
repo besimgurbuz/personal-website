@@ -44,13 +44,19 @@
 		grid-gap: 1rem;
 		justify-content: space-between;
 		align-items: center;
-		padding: 14px 18px;
+		padding: 14px;
 		align-self: flex-end;
 	}
 
 	@media (max-width: 500px) {
 		.lately-activity {
 			grid-gap: 0.3rem;
+		}
+	}
+
+	@media (max-width: 415px) {
+		.lately-activity {
+			max-width: 300px;
 		}
 	}
 </style>

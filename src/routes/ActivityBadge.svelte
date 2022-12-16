@@ -48,15 +48,15 @@
 		color: var(--app-link-color);
 	}
 
-	@media (max-width: 900px) {
-		.activity-text {
-			width: 86px;
-		}
-	}
-
 	@media (max-width: 1500px) {
 		.activity-text {
 			width: 100px;
+		}
+	}
+
+	@media (max-width: 900px) {
+		.activity-text {
+			width: 86px;
 		}
 	}
 </style>

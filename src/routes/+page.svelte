@@ -82,15 +82,21 @@
 		font-size: 20px;
 	}
 
-	@media (max-width: 325px) {
-		.greeting-text {
-			font-size: 16px;
+	@media (max-width: 1080px) {
+		.greeting-container {
+			margin: 80px 10px 0 10px;
 		}
 	}
 
-	@media (max-widht: 1080px) {
+	@media (max-width: 485px) {
 		.greeting-container {
-			margin: 80px 10px 0 10px;
+			margin: 60px 0 0 0px;
+		}
+	}
+
+	@media (max-width: 325px) {
+		.greeting-text {
+			font-size: 16px;
 		}
 	}
 </style>
