@@ -23,7 +23,11 @@
 </script>
 
 <svelte:head>
-	<title>Besim Gürbüz - My Skills</title>
+	<title>Besim Gürbüz • My Skills</title>
+
+	<meta name="twitter:title" content="Besim Gürbüz" />
+	<meta name="twitter:description" content="Besim Gürbüz • My Skills" />
+	<meta name="Description" content="Besim Gürbüz • My Skills" />
 </svelte:head>
 
 <div class="my-skills-container">
