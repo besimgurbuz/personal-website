@@ -21,7 +21,10 @@
 
 <svelte:head>
 	<title>Besim Gürbüz</title>
-	<meta name="description" content="The personal website of Besim Gürbüz" />
+
+	<meta name="twitter:title" content="Besim Gürbüz" />
+	<meta name="twitter:description" content="Personal website of Besim Gürbüz" />
+	<meta name="Description" content="Personal website of Besim Gürbüz" />
 </svelte:head>
 
 <section>

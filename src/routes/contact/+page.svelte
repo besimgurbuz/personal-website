@@ -7,7 +7,11 @@
 </script>
 
 <svelte:head>
-	<title>Besim Gürbüz - Contact</title>
+	<title>Besim Gürbüz • Contact</title>
+
+	<meta name="twitter:title" content="Besim Gürbüz" />
+	<meta name="twitter:description" content="Besim Gürbüz • Contact" />
+	<meta name="Description" content="Besim Gürbüz • Contact" />
 </svelte:head>
 
 <div class="contact fade-out">
