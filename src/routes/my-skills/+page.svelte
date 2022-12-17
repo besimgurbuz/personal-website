@@ -36,11 +36,11 @@
 		experience. I love learning and teaching.
 	</p>
 	<div class="tools">
-		<h2 class="header">Tools</h2>
+		<h2 class="header">My Tools</h2>
 		<ToolsSection {toolsPromise} />
 	</div>
 	<div class="projects">
-		<h2 class="header">Projects</h2>
+		<h2 class="header">My Projects</h2>
 		<a
 			href="https://github.com/besimgurbuz?tab=repositories"
 			target="_blank"
