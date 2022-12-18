@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import type { BlogPost } from '$lib/models/blog-post';
 	import type { RecentActivity } from '$lib/models/recent-activity';
 	import PostList from './PostList.svelte';
 	import RecentActivities from './RecentActivities.svelte';
@@ -16,7 +16,15 @@
 		}
 	};
 
+	const getPosts = async (): Promise<BlogPost[]> => {
+		const res = await fetch('/api/posts');
+		const body = await res.json();
+
+		return body;
+	};
+
 	const recentActivitiesPromise = getRecentActivities();
+	const postsPromise = getPosts();
 </script>
 
 <svelte:head>
@@ -46,7 +54,7 @@
 	</div>
 	<div class="posts fade-out">
 		<h2 class="posts-header">My latest blog posts</h2>
-		<PostList posts={$page.data.posts} />
+		<PostList {postsPromise} />
 	</div>
 </section>
 
