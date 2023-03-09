@@ -26,7 +26,7 @@
 		top: -120px;
 		right: -150px;
 		display: inline-block;
-		transform: rotateZ(-6deg);
+		transform: rotateZ(334deg);
 		color: var(--app-primary-color);
 	}
 
@@ -40,15 +40,21 @@
 		svg {
 			width: 250px;
 			right: -70px;
-			transform: rotateZ(-12deg);
 		}
 	}
 
-	@media (max-width: 714px) {
+	@media (max-width: 722px) {
 		svg {
-			top: -110px;
-			right: -35px;
+			top: -100px;
+			right: -10px;
 			transform: rotateZ(-18deg);
+		}
+	}
+
+	@media (max-width: 550px) {
+		svg {
+			right: -55px;
+			transform: rotateZ(330deg);
 		}
 	}
 

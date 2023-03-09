@@ -1,6 +1,6 @@
 <script>
 	import ThisIsMeArrow from '$lib/icons/ThisIsMeArrow.svelte';
-	import thisIsMeSrc from '$lib/images/this_is_me.png';
+	import thisIsMeSrc from '$lib/images/this_is_me.jpg';
 </script>
 
 <div class="this-is-me-container">
