@@ -30,7 +30,7 @@ export const GET = (async ({ fetch }) => {
 }) satisfies RequestHandler;
 
 const createSpotifyActivityResponse = (response: SpotifyResponse): SpotifyActivity | undefined => {
-	if (!response || response.items.length === 0) return undefined;
+	if (!response || !response.items || response.items.length === 0) return undefined;
 	const latestSong = response.items[0];
 	return {
 		artistName: latestSong.track.album.artists.map((artist) => artist.name).join(', '),
@@ -41,7 +41,7 @@ const createSpotifyActivityResponse = (response: SpotifyResponse): SpotifyActivi
 };
 
 const createSteamActivityResponse = ({ response }: SteamResponse): SteamActitivy | undefined => {
-	if (!response || response.games.length === 0) return undefined;
+	if (!response || !response?.games || response?.games?.length === 0) return undefined;
 	const latestGame = response.games[0];
 	return {
 		gameName: latestGame.name,
