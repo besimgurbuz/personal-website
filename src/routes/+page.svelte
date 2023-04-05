@@ -50,7 +50,7 @@
 					I like to create well-thought, tested, and continuously evolved products.
 				</p>
 				<p class="job-text">
-					I am currently working for <a
+					Currently I am working at <a
 						href="https://siemens.com"
 						target="_blank"
 						rel="noreferrer"
