@@ -12,9 +12,14 @@ const projects: Project[] = [
 		inProgress: true
 	},
 	{
+		name: 'ng-mat-table-filter',
+		url: '',
+		stack: ['angular', 'typescript']
+	},
+	{
 		name: 'personal-website',
 		url: '',
-		stack: ['svelte', 'sveltekit'],
+		stack: ['svelte', 'sveltekit']
 	},
 	{
 		name: 'cms-with-php',
