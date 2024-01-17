@@ -24,7 +24,7 @@
 		pointer-events: none;
 		position: absolute;
 		top: -120px;
-		right: -150px;
+		right: -250px;
 		display: inline-block;
 		transform: rotateZ(334deg);
 		color: var(--app-primary-color);
@@ -32,7 +32,8 @@
 
 	@media (max-width: 1700px) {
 		svg {
-			right: -150px;
+			right: -200px;
+			top: -150px;
 		}
 	}
 
@@ -40,28 +41,14 @@
 		svg {
 			width: 250px;
 			right: -70px;
+			transform: rotateZ(325deg);
 		}
 	}
 
-	@media (max-width: 722px) {
+	@media (max-width: 400px) {
 		svg {
-			top: -100px;
-			right: -10px;
-			transform: rotateZ(-18deg);
-		}
-	}
-
-	@media (max-width: 550px) {
-		svg {
-			right: -55px;
-			transform: rotateZ(330deg);
-		}
-	}
-
-	@media (max-width: 325px) {
-		svg {
-			right: -25px;
-			transform: rotateZ(-20deg);
+			width: 200px;
+			right: -100px;
 		}
 	}
 </style>

@@ -73,7 +73,7 @@
 	.greeting-container {
 		margin: 110px 40px 0 40px;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 	}
 
 	.greeting-inner-container {
