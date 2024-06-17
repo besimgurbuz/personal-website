@@ -2,6 +2,7 @@
 	import Siemens from '$lib/icons/Siemens.svelte';
 	import type { BlogPost } from '$lib/models/blog-post';
 	import type { RecentActivity } from '$lib/models/recent-activity';
+	import { parsePostsRSSFeed } from '$lib/utils/post-rss-parser';
 	import PostList from './PostList.svelte';
 	import RecentActivities from './RecentActivities.svelte';
 	import ThisIsMe from './ThisIsMe.svelte';
@@ -19,9 +20,8 @@
 
 	const getPosts = async (): Promise<BlogPost[]> => {
 		const res = await fetch('/api/posts');
-		const body = await res.json();
-
-		return body;
+		const text = await res.text();
+		return parsePostsRSSFeed(text);
 	};
 
 	const recentActivitiesPromise = getRecentActivities();
