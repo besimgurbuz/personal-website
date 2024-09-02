@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Siemens from '$lib/icons/Siemens.svelte';
 	import type { BlogPost } from '$lib/models/blog-post';
 	import type { RecentActivity } from '$lib/models/recent-activity';
 	import { parsePostsRSSFeed } from '$lib/utils/post-rss-parser';
@@ -49,14 +48,14 @@
 				<p class="greeting-text">
 					I like to create well-thought, tested, and continuously evolved products.
 				</p>
-				<p class="job-text">
+				<!-- <p class="job-text">
 					Currently I am working at <a
 						href="https://siemens.com"
 						target="_blank"
 						rel="noreferrer"
 						class="company-link"><Siemens /></a
 					>
-				</p>
+				</p> -->
 			</div>
 			<div class="activities">
 				<RecentActivities {recentActivitiesPromise} />
@@ -90,19 +89,19 @@
 		gap: 1rem;
 	}
 
-	.greeting-text,
-	.job-text {
+	.greeting-text
+	/*, .job-text  */ {
 		font-size: 20px;
 		max-width: 500px;
 	}
 
-	.job-text {
+	/* .job-text {
 		width: 100%;
 	}
 
 	.company-link {
 		width: 100px;
-	}
+	} */
 
 	.activities {
 		margin-top: 32px;
