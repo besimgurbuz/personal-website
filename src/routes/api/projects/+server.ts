@@ -8,8 +8,7 @@ const projects: Project[] = [
 	{
 		name: 'mfloww',
 		url: 'https://mfloww.com',
-		stack: ['node.js', 'prisma', 'angular', 'tailwind'],
-		inProgress: true
+		stack: ['node.js', 'prisma', 'angular', 'tailwind']
 	},
 	{
 		name: 'ng-mat-table-filter',
