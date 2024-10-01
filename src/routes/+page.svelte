@@ -105,6 +105,7 @@
 
 	.activities {
 		margin-top: 32px;
+		margin-right: auto;
 	}
 
 	.posts {
@@ -121,6 +122,10 @@
 	@media (max-width: 1080px) {
 		.greeting-container {
 			margin: 80px 10px 0 10px;
+		}
+
+		.activities {
+			margin-right: 0;
 		}
 	}
 
