@@ -39,6 +39,7 @@
     "node": "24.x"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "psn-api": "^2.17.0"
   }
 }

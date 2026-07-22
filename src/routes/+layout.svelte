@@ -1,9 +1,13 @@
 <script lang="ts">
+	import { dev } from '$app/environment';
+	import { injectAnalytics } from '@vercel/analytics/sveltekit';
+
 	import '$lib/fonts/syne-family.css';
 	import Footer from './Footer.svelte';
 	import Header from './Header.svelte';
 	import { theme } from './store';
 	import './styles.css';
+
 	interface Props {
 		children?: import('svelte').Snippet;
 	}
@@ -21,6 +25,7 @@
 	};
 
 	printLogMessage();
+	injectAnalytics({ mode: dev ? 'development' : 'production' });
 </script>
 
 <svelte:head>
